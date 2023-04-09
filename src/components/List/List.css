@@ -1,0 +1,8 @@
+.list {
+    width: 200px;
+    height: 150px;
+}
+.list img{
+   justify-content: center;
+   margin-bottom: 10px;
+}

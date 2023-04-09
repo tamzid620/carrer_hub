@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "icon":"accounts 1.png" ,
+      "name": "Software Development",
+      "info":"300 Jobs Available"
+    },
+    {
+      "id": 2,
+      "icon":"business 1.png",
+      "name": "Design",
+      "info":"100+ Jobs Available"
+    },
+    {
+      "id": 3,
+      "icon":"chip 1.png" ,
+      "name": "Marketing",
+      "info":"150 Jobs Available"
+    },
+    {
+      "id": 4,
+      "icon":"social-media 1.png" ,
+      "name": "Sales",
+      "info":"224 Jobs Available"
+    }
+  ]
+  
