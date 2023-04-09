@@ -1,22 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <nav>
+        <nav className='flex justify-between mt-5'>
             <div>
-                <h3>Dash profession</h3>
+                <h3 className='text-4xl font-semibold'>Dash profession</h3>
             </div>
-            <div>
 
+            <div className='text-2xl'>
+                <Link className='text-black' to='/statistics'>Statistics</Link>
+                <Link className='ms-8 text-black' to='/appliedJobs'>Applied Jobs</Link>
+                <Link className='ms-8 text-black' to='/blog'>Blog</Link>
             </div>
-            <div>
 
+            <div>
+                <Link to='/Star Applying'><button>Star Applying</button></Link>
             </div>
-            <Link to='/statistics'>Statistics</Link>
-            <Link to='/appliedJobs'>Applied Jobs</Link>
-            <Link to='/blog'>Blog</Link>
-            <Link to ='/Star Applying'><button>Star Applying</button></Link>
         </nav>
     );
 };
