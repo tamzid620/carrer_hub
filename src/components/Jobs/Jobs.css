@@ -1,0 +1,29 @@
+.job {
+    width: 450px;
+    height: 300px;
+    
+}
+
+.jobTitle {
+    font-weight: 700;
+    font-size: 24px;
+    color: #474747;
+}
+
+.companyName {
+    font-weight: 600;
+    font-size: 20px;
+    color: #757575;
+}
+
+.location {
+    font-weight: 600;
+    font-size: 20px;
+    color: #757575;
+}
+
+.salary {
+    font-weight: 600;
+    font-size: 15px;
+    color: #757575;
+}

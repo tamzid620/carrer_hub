@@ -1,57 +1,62 @@
 [
     {
-      "jobTitle": "Senior Frontend Developer",
-      "image": "google-1-1 1.png",
-      "dutyType": "Remote",
-      "dutyTime":"FullTime" ,
-      "companyName": "ABC Corp",
-      "location": "New York, NY",
-      "salary": "$120,000 - $150,000"
+        "id": 1,
+        "jobTitle": "Senior Frontend Developer",
+        "image": "google-1-1 1.png",
+        "dutyType": "Remote",
+        "dutyTime": "FullTime",
+        "companyName": "ABC Corp",
+        "location": "New York, NY",
+        "salary": "$120,000 - $150,000"
     },
     {
-      "jobTitle": "Marketing Manager",
-      "image":"Group 10021.png" ,
-      "dutyType":"OnTime" ,
-      "dutyTime":"FullTime"  ,
-      "companyName": "XYZ Inc",
-      "location": "San Francisco, CA",
-      "salary": "$100,000 - $130,000"
+        "id": 2,
+        "jobTitle": "Marketing Manager",
+        "image": "Group 10021.png",
+        "dutyType": "OnTime",
+        "dutyTime": "FullTime",
+        "companyName": "XYZ Inc",
+        "location": "San Francisco, CA",
+        "salary": "$100,000 - $130,000"
     },
     {
-      "jobTitle": "Software Engineer",
-      "image":"CareerHub.png" ,
-      "dutyType":"FullTime"  ,
-      "dutyTime":"FullTime"  ,
-      "companyName": "DEF Ltd",
-      "location": "Seattle, WA",
-      "salary": "$110,000 - $140,000"
+        "id": 3,
+        "jobTitle": "Software Engineer",
+        "image": "CareerHub.png",
+        "dutyType": "FullTime",
+        "dutyTime": "FullTime",
+        "companyName": "DEF Ltd",
+        "location": "Seattle, WA",
+        "salary": "$110,000 - $140,000"
     },
     {
-      "jobTitle": "Product Manager",
-      "image":"netflix-4 1.png" ,
-      "dutyType":"FullTime"  ,
-      "dutyTime":"FullTime"  ,
-      "companyName": "GHI LLC",
-      "location": "Chicago, IL",
-      "salary": "$130,000 - $160,000"
+        "id": 4,
+        "jobTitle": "Product Manager",
+        "image": "netflix-4 1.png",
+        "dutyType": "FullTime",
+        "dutyTime": "FullTime",
+        "companyName": "GHI LLC",
+        "location": "Chicago, IL",
+        "salary": "$130,000 - $160,000"
     },
     {
-      "jobTitle": "UX Designer",
-      "image":"tesla-9 1.png" ,
-      "dutyType": "FullTime" ,
-      "dutyTime":"FullTime"  ,
-      "companyName": "LMN Co",
-      "location": "Boston, MA",
-      "salary": "$90,000 - $120,000"
+        "id": 5,
+        "jobTitle": "UX Designer",
+        "image": "tesla-9 1.png",
+        "dutyType": "FullTime",
+        "dutyTime": "FullTime",
+        "companyName": "LMN Co",
+        "location": "Boston, MA",
+        "salary": "$90,000 - $120,000"
     },
     {
-      "jobTitle": "Data Scientist",
-      "image":"google-1-1 1-1.png" ,
-      "dutyType": "FullTime" ,
-      "dutyTime":"FullTime"  ,
-      "companyName": "PQR Enterprises",
-      "location": "Austin, TX",
-      "salary": "$140,000 - $170,000"
+        "id": 6,
+        "jobTitle": "Data Scientist",
+        "image": "google-1-1 1-1.png",
+        "dutyType": "FullTime",
+        "dutyTime": "FullTime",
+        "companyName": "PQR Enterprises",
+        "location": "Austin, TX",
+        "salary": "$140,000 - $170,000"
     }
-  ]
-  
+]

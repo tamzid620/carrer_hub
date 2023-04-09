@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
 {/* DP section------------------ */}
-            <div  className='flex items-center justify-center bg-pink-100'>
+            <div  className='grid sm:grid-cols-1  lg:grid-cols-2  items-center justify-center bg-pink-100'>
                 <div>
                     <h1 className='text-7xl text-left font-semibold mb-5'>One Step <br /> Closer To Your <br /> <span className='text-pink-600'> Dream Job</span></h1>
                     <p className='text-gray-400 text-start'>A highly creative thinker, grammar Nazi, and social media <br /> enthusiast seek the position of Social Media & <br /> Content Marketing Analyst to transform technical <br /> and digital information and processes into influencial stories.</p>
@@ -18,10 +18,10 @@ const Home = () => {
             </div>
 {/* Job catagory list ---------------------- */}
             <div className='mt-16'>
-                <h1 className='font font-semibold  text-black'>Job Category List</h1>
+                <h1 className='font font-semibold  text-black mb-3'>Job Category List</h1>
                 <p className='text-gray-400 mb-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 {/* ------------lists---------- */}
-                    <div className='flex gap-5 justify-center mb-28'>
+                    <div className='grid sm:grid-cols-1 lg:grid-cols-4  mb-28'>
                         {
                             lists.map(list => <List
                                 key={list.id}
@@ -35,6 +35,7 @@ const Home = () => {
             <h1 className='font font-semibold  text-black'>Featured Jobs</h1>
                 <p className='text-gray-400 mb-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
+            
         </div>
     );
 }
