@@ -7,7 +7,14 @@
         "dutyTime": "FullTime",
         "companyName": "ABC Corp",
         "location": "New York, NY",
-        "salary": "$120,000 - $150,000"
+        "salary": "$120,000 - $150,000",
+        "phone": "555-1234",
+        "email": "johndoe@example.com",  
+        "description": "We are seeking a skilled software engineer to join our team.",   
+         "responsibilities": [      "Develop and maintain high-quality software",      "Collaborate with other engineers and stakeholders to deliver quality products",      "Debug and troubleshoot issues in a timely manner"    ],
+          "educational_requirements": "Bachelor's degree in Computer Science or related field",
+          "experience": "3+ years of experience in software engineering"
+
     },
     {
         "id": 2,
@@ -17,7 +24,17 @@
         "dutyTime": "FullTime",
         "companyName": "XYZ Inc",
         "location": "San Francisco, CA",
-        "salary": "$100,000 - $130,000"
+        "salary": "$100,000 - $130,000",
+        "phone": "555-5678",
+        "email": "janesmith@example.com",
+        "description": "We are looking for a dynamic and experienced marketing manager to join our team.",
+        "responsibilities": [
+          "Develop and execute marketing campaigns to increase brand awareness",
+          "Analyze market trends and competition to inform marketing strategies",
+          "Collaborate with cross-functional teams to develop marketing materials"
+        ],
+        "educational_requirements": "Bachelor's degree in Marketing or related field",
+        "experience": "5+ years of experience in marketing"
     },
     {
         "id": 3,
@@ -27,7 +44,17 @@
         "dutyTime": "FullTime",
         "companyName": "DEF Ltd",
         "location": "Seattle, WA",
-        "salary": "$110,000 - $140,000"
+        "salary": "$110,000 - $140,000",
+        "phone": "555-9876",
+        "email": "bobjohnson@example.com",
+        "description": "We are seeking a detail-oriented data analyst to join our team.",
+        "responsibilities": [
+          "Collect and analyze large datasets to identify trends and patterns",
+          "Create data visualizations and presentations to communicate findings",
+          "Collaborate with other analysts and stakeholders to deliver insights"
+        ],
+        "educational_requirements": "Bachelor's degree in Statistics, Mathematics, or related field",
+        "experience": "2+ years of experience in data analysis"
     },
     {
         "id": 4,
@@ -37,7 +64,17 @@
         "dutyTime": "FullTime",
         "companyName": "GHI LLC",
         "location": "Chicago, IL",
-        "salary": "$130,000 - $160,000"
+        "salary": "$130,000 - $160,000",
+        "phone": "555-4321",
+        "email": "marywilliams@example.com",
+        "description": "We are looking for a creative and talented graphic designer to join our team.",
+        "responsibilities": [
+          "Design and develop visual concepts and branding materials",
+          "Collaborate with other designers and stakeholders to create cohesive designs",
+          "Stay up-to-date with design trends and best practices"
+        ],
+        "educational_requirements": "Bachelor's degree in Graphic Design or related field",
+        "experience": "3+ years of experience in graphic design"
     },
     {
         "id": 5,
@@ -47,7 +84,17 @@
         "dutyTime": "FullTime",
         "companyName": "LMN Co",
         "location": "Boston, MA",
-        "salary": "$90,000 - $120,000"
+        "salary": "$90,000 - $120,000",
+        "phone": "555-8765",
+        "email": "davidlee@example.com",
+        "description": "We are seeking a detail-oriented financial analyst to join our team.",
+        "responsibilities": [
+          "Analyze financial data and prepare reports and forecasts",
+          "Identify and recommend solutions to financial problems",
+          "Collaborate with other analysts and stakeholders to deliver insights"
+        ],
+        "educational_requirements": "Bachelor's degree in Finance or related field",
+        "experience": "2+ years of experience in financial analysis"
     },
     {
         "id": 6,
@@ -57,6 +104,16 @@
         "dutyTime": "FullTime",
         "companyName": "PQR Enterprises",
         "location": "Austin, TX",
-        "salary": "$140,000 - $170,000"
+        "salary": "$140,000 - $170,000",
+        "phone": "555-2345",
+        "email": "sarahbrown@example.com",
+        "description": "We are looking for an experienced and motivated human resources manager to join our team.",
+        "responsibilities": [
+          "Manage employee recruitment, onboarding, and performance evaluations",
+          "Develop and implement HR policies and procedures",
+          "Collaborate with cross-functional teams to resolve employee issues"
+        ],
+        "educational_requirements": "Bachelor's degree in Human Resources or related field",
+        "experience": "5+ years of experience in human resources"
     }
 ]

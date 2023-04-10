@@ -12,6 +12,7 @@ import Statistics from './components/Statistics/Statistics';
 import AppliedJobs from './components/appliedJobs/appliedJobs';
 import Blog from './components/Blog/Blog';
 
+
 // router section -------------------
 
 
@@ -25,8 +26,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch('lists.json'),
-        
+        loader: ()=> fetch('lists.json'),    
       },
       {
         path:'statistics' ,
@@ -49,6 +49,8 @@ const router = createBrowserRouter([
 // render section --------------------
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <div className='max-w-[1440px] h-screen mx-auto'>
     <RouterProvider router={router} />
+    </div>
   </React.StrictMode>,
 )
