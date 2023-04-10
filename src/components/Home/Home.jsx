@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import List from '../List/List';
 import Jobs from '../Jobs/Jobs';
 
 const Home = () => {
     const lists = useLoaderData()
+    const [jobs, setJobs]= useState([]);
+
+useEffect(()=> {
+    fetch('jobs.json')
+    .then(res=> res.json())
+    .then(data => setJobs(data))
+}, [])
 
     return (
         <div>
@@ -39,7 +46,15 @@ const Home = () => {
                 <h1 className='font font-semibold  text-black'>Featured Jobs</h1>
                 <p className='text-gray-400 mb-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 {/*---------- Featured Jobs list------------------*/}
-
+<div className='allJob grid sm:grid-cols-1 lg:grid-cols-2 justify-center '>
+                    {
+                        jobs.map(job => <Jobs
+                            key={job.id}
+                            job={job}
+                        ></Jobs>)
+                    }   
+                </div>
+                    <button className='rounded-full w-32  bg-pink-500 text-white mb-10'>See All Jobs</button>
 
             </div>
 

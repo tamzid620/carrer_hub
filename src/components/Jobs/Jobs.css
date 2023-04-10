@@ -1,6 +1,6 @@
 .job {
-    width: 450px;
-    height: 300px;
+    width: 350px;
+    height: 320px;
     
 }
 
@@ -18,7 +18,7 @@
 
 .location {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
     color: #757575;
 }
 

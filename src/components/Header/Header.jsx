@@ -25,7 +25,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <h3 className='text-4xl font-semibold text-pink-500'><span className='text-black'>D</span>ash <span className='text-black'>p</span>rofession</h3>
+                    <h3 className='text-4xl font-semibold text-pink-500'><span className='text-black'>D</span>ash<span className='text-black'>h</span>ub</h3>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -45,7 +45,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Get started</a>
+                    <a class="btn rounded-lg mt-5 bg-pink-500 text-white">Star Applying</a>
                 </div>
             </div>
         </nav>

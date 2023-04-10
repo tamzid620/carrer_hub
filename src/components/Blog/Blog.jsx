@@ -10,7 +10,7 @@ const Blog = () => {
 
             <br />
 
-            <h2 className='font-semibold text-green-500 text-2xl'>2.What is a custom hook?</h2>
+            <h2 className='font-semibold text-green-500 text-2xl'>2.What is custom hook?</h2>
             <p className='font-semibold  text-2xl text-red-600'>A: custom hook is a JavaScript function that uses one or more React hooks to implement a specific behavior, which can be reused across different components in a React application.</p>
 
             <br />
