@@ -11,6 +11,7 @@ import Layout from './components/Layout/Layout';
 import Statistics from './components/Statistics/Statistics';
 import AppliedJobs from './components/appliedJobs/appliedJobs';
 import Blog from './components/Blog/Blog';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 // router section -------------------
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element:<Layout></Layout>,
+    errorElement: <ErrorPage/>,
     children: [  
       {
         path: '/',

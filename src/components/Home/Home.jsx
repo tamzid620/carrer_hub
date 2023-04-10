@@ -16,7 +16,7 @@ useEffect(()=> {
     return (
         <div>
             {/* Banner/DP section------------------ */}
-            <div className='grid sm:grid-cols-1  lg:grid-cols-2  items-center justify-center bg-pink-100'>
+            <div className='grid sm:grid-cols-1  lg:grid-cols-2  items-center justify-center bg-pink-100 pl-5'>
                 <div className=''>
                     <h1 className='text-7xl text-left font-semibold mb-5'>One Step <br /> Closer To Your <br /> <span className='text-pink-600'> Dream Job</span></h1>
                     <p className='text-gray-400 text-start'>A highly creative thinker, grammar Nazi, and social media <br /> enthusiast seek the position of Social Media & <br /> Content Marketing Analyst to transform technical <br /> and digital information and processes into influencial stories.</p>
