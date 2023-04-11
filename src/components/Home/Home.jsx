@@ -7,12 +7,19 @@ import Details from '../Details/Details';
 const Home = () => {
     const lists = useLoaderData()
     const [jobs, setJobs] = useState([]);
+    const [showAllJobs, setShowAllJobs] = useState(false);
 
     useEffect(() => {
         fetch('jobs.json')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
+
+    const handleClick = (id) => {
+        window.location.href = "/details";
+        console.log()
+    };
+    const displayedJobs = showAllJobs ? jobs : jobs.slice(0, 4);
     
     return (
         <div>
@@ -49,14 +56,15 @@ const Home = () => {
                 {/*---------- Featured Jobs list------------------*/}
                 <div className=' grid sm:grid-cols-1 lg:grid-cols-2 justify-center '>
                     {
-                        jobs.map(job => <Jobs
+                        displayedJobs.map(job => <Jobs
                             key={job.id}
                             job={job}
+                            handleClick={handleClick}
                         ></Jobs>)
                     }
                 </div>
-                <button id='btn-see-all' className='rounded-full w-32  bg-pink-500 text-white mb-10 '>See All Jobs</button>
-
+                {!showAllJobs && (<button className='rounded-full w-32  bg-pink-500 text-white mb-10 ' onClick={() => setShowAllJobs(true)}>See All Jobs</button>
+        )}
             </div>
 
         </div>
