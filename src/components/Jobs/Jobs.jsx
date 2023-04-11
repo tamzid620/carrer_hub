@@ -5,11 +5,7 @@ import { faLocationArrow, faSackDollar } from '@fortawesome/free-solid-svg-icons
 import Details from '../Details/Details';
 
 const Jobs = ({job,handleClick}) => {
-    const { image, jobTitle , dutyType, dutyTime, companyName, location, salary , id} = job;
-
-
-
-
+const { image, jobTitle , dutyType, dutyTime, companyName, location, salary , id} = job;
     
     return (
         <div className='job p-4 text-left border mb-5 rounded-lg ml-auto mr-auto '>
@@ -26,6 +22,7 @@ const Jobs = ({job,handleClick}) => {
             </div>
             <button onClick={()=> handleClick(id)} className='rounded-lg bg-pink-500 text-white mt-3'>View Details</button>
         </div>
+       
     );
 };
 export default Jobs;

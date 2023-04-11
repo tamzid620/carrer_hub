@@ -1,10 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import ReviewItem from '../ReviewItem/ReviewItem';
+// import ReviewItem from '../ReviewItem/ReviewItem';
 import './AppliedJobs.css'
 import { useLoaderData } from 'react-router-dom';
+import { getStoredCart } from '../../utilities/fakeDB';
+
 
 const AppliedJobs = () => {
     const applyjobs = useLoaderData()
+
+    let job = []
+    const savedJob = getStoredCart()
+    for(const id in savedJob){
+        const findJob = applyjobs.find(apply => apply.id ===id)
+        if(findJob){
+            findJob.quantity = savedJob[id]
+            job.push(findJob)
+        }
+    }
+
     return (
         <div>
             <h2 className='text-2xl font-semibold text-pink-400 pt-20 pb-5 bg-pink-100 mb-10'>Applied Jobs</h2>
@@ -18,13 +31,14 @@ const AppliedJobs = () => {
                 </div>
             </div>
             <div className='review-container'>
-                {
+                {/* {
                     applyjobs.map(applyjob => <ReviewItem
                         key={applyjob.id}
                         applyjob={applyjob}
                     >
                     </ReviewItem>)
-                }
+                } */}
+                <div>job</div>
             </div>
         </div>
     );

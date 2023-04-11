@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import List from '../List/List';
 import Jobs from '../Jobs/Jobs';
 import Details from '../Details/Details';
+import { addToDb } from '../../utilities/fakeDB';
 
 const Home = () => {
     const lists = useLoaderData()
@@ -15,12 +16,13 @@ const Home = () => {
             .then(data => setJobs(data))
     }, [])
 
-    const handleClick = (id) => {
-        window.location.href = "/details";
-        console.log()
+    const handleClick = id => {
+        // window.location.href = "details";
+        // console.log(id)
+        addToDb(id)
     };
     const displayedJobs = showAllJobs ? jobs : jobs.slice(0, 4);
-    
+
     return (
         <div>
             {/* Banner/DP section------------------ */}
@@ -36,8 +38,8 @@ const Home = () => {
             </div>
             {/* Job catagory list ---------------------- */}
             <div className='mt-16'>
-                <h1 className='font font-semibold  text-black mb-3'>Job Category List</h1>
-                <p className='text-gray-400 mb-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <h1 className='font font-semibold  text-black mb-3 text-center'>Job Category List</h1>
+                <p className='text-gray-400 mb-5 text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
                 {/* ------------Job  lists---------- */}
                 <div className='grid sm:grid-cols-1 lg:grid-cols-4  mb-28'>
@@ -50,9 +52,9 @@ const Home = () => {
                 </div>
             </div>
             {/*---------- Featured Jobs ------------------*/}
-            <div>
-                <h1 className='font font-semibold  text-black'>Featured Jobs</h1>
-                <p className='text-gray-400 mb-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            <div className=''>
+                <h1 className='font font-semibold  text-black text-center'>Featured Jobs</h1>
+                <p className='text-gray-400 mb-5 text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 {/*---------- Featured Jobs list------------------*/}
                 <div className=' grid sm:grid-cols-1 lg:grid-cols-2 justify-center '>
                     {
@@ -63,8 +65,9 @@ const Home = () => {
                         ></Jobs>)
                     }
                 </div>
-                {!showAllJobs && (<button className='rounded-full w-32  bg-pink-500 text-white mb-10 ' onClick={() => setShowAllJobs(true)}>See All Jobs</button>
-        )}
+                <div className='flex justify-center'>
+                {!showAllJobs && (<button className='rounded-full w-32  bg-pink-500 text-white mb-10 ' onClick={() => setShowAllJobs(true)}>See All Jobs</button>)}
+                </div>
             </div>
 
         </div>
