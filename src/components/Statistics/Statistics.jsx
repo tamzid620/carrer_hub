@@ -42,7 +42,7 @@ const data = [
 const AreaChartComponent = () => {
   return (
     <div >
-        <h1 className='mb-10 mt-10 text-pink-600'>Here's a AreaChart about my Assignment numbers:</h1>
+        <h1 className='mb-10 mt-10 text-pink-600 text-2xl'>Here's a AreaChart about my Assignment numbers:</h1>
     <AreaChart
       width={600}
       height={400}

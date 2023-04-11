@@ -15,10 +15,10 @@ const Header = () => {
                                 <Link className='ms-8 text-black' to='/'>Home</Link>
                             </li>
                             <li>
-                                <Link className='text-black' to='/statistics'>Statistics</Link>
+                                <Link className=' ms-8 text-black' to='/statistics'>Statistics</Link>
                             </li>
                             <li>
-                                <Link className='ms-8 text-black' to='/appliedJobs'>Applied Jobs</Link>
+                            <Link className='ms-8 text-black' to='/appliedJobs'>Applied Jobs</Link>
                             </li>
                             <li>
                                 <Link className='ms-8 text-black' to='/blog'>Blog</Link>

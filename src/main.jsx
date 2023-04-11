@@ -9,9 +9,10 @@ import {
 import Home from './components/Home/Home';
 import Layout from './components/Layout/Layout';
 import Statistics from './components/Statistics/Statistics';
-import AppliedJobs from './components/appliedJobs/appliedJobs';
+import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Details from './components/Details/Details';
 
 
 // router section -------------------
@@ -35,12 +36,18 @@ const router = createBrowserRouter([
       },
       {
         path:'appliedJobs' ,
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader:()=> fetch('jobs.json')
       },
       {
         path: 'blog',
         element: <Blog></Blog>
-      }
+      },
+      {
+        path: 'details',
+        element: <Details></Details>,
+        loader:()=> fetch('jobs.json')
+      },
     ]
   },
 ]);
