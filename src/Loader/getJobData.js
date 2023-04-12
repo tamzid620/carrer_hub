@@ -2,6 +2,7 @@ import { getStoredJob } from "../utilities/fakeDB"
 
 export const applyJobsData = async ()=> {
    const jobsData = await  fetch('/jobs.json')
+   console.log(jobsData)
    const jobs  = await jobsData.json()
 
 

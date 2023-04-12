@@ -12,7 +12,6 @@ import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Details from './components/Details/Details';
 import AppliedJobs from './components/appliedJobs/appliedJobs';
-import { applyJobsData } from './Loader/getJobdata';
 
 
 // router section -------------------
@@ -56,7 +55,7 @@ const router = createBrowserRouter([
 // render section --------------------
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='max-w-[1440px] h-screen mx-auto'>
+    <div className='max-w-[1440px] mx-auto'>
     <RouterProvider  router={router} />
     </div>
   </React.StrictMode>,

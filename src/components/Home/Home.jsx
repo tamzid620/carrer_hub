@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import List from '../List/List';
 import Jobs from '../Jobs/Jobs';
-import Details from '../Details/Details';
 
 const Home = () => {
     const lists = useLoaderData()
