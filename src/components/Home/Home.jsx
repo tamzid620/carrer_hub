@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import List from '../List/List';
 import Jobs from '../Jobs/Jobs';
+import './Home.css'
 
 const Home = () => {
     const lists = useLoaderData()
@@ -23,14 +24,14 @@ const Home = () => {
     return (
         <div>
             {/* Banner/DP section------------------ */}
-            <div className='grid sm:grid-cols-1  lg:grid-cols-2  items-center justify-center  bg-pink-100 pl-5'>
+            <div className='grid sm:grid-cols-1  lg:grid-cols-2  items-center justify-center   pl-5  banner'>
                 <div className=''>
                     <h1 className='text-7xl text-left font-semibold mb-5'>One Step <br /> Closer To Your <br /> <span className='text-pink-600'> Dream Job</span></h1>
                     <p className='text-gray-400 text-start'>A highly creative thinker, grammar Nazi, and social media <br /> enthusiast seek the position of Social Media & <br /> Content Marketing Analyst to transform technical <br /> and digital information and processes into influencial stories.</p>
                     <button className='rounded-lg mt-5 bg-pink-500 text-white flex justify-start'>Get Started</button>
                 </div>
                 <div className='dp'>
-                    <img src="../../../assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+                    <a href="https://ibb.co/hZLWpSH"><img src="https://i.ibb.co/vQVP2Sm/P3-OLGJ1-copy-1.png" alt="P3-OLGJ1-copy-1" border="0" /></a>"
                 </div>
             </div>
             {/* Job catagory list ---------------------- */}

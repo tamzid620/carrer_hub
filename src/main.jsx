@@ -12,6 +12,7 @@ import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Details from './components/Details/Details';
 import AppliedJobs from './components/appliedJobs/appliedJobs';
+import DetailInfo from './components/DetailInfo/DetailInfo';
 
 
 // router section -------------------
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path: 'details/:blogid',
+        path: 'details/:detailsid',
         element: <Details></Details>,
       },
     ]
