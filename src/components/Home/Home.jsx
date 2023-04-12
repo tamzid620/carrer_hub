@@ -3,7 +3,6 @@ import { useLoaderData } from 'react-router-dom';
 import List from '../List/List';
 import Jobs from '../Jobs/Jobs';
 import Details from '../Details/Details';
-import { addToDb } from '../../utilities/fakeDB';
 
 const Home = () => {
     const lists = useLoaderData()
@@ -17,10 +16,9 @@ const Home = () => {
     }, [])
 
     const handleClick = id => {
-        // window.location.href = "details";
-        // console.log(id)
-        addToDb(id)
+        window.location.href = `details/${id}`;
     };
+
     const displayedJobs = showAllJobs ? jobs : jobs.slice(0, 4);
 
     return (

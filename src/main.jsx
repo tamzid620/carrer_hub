@@ -12,7 +12,7 @@ import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Details from './components/Details/Details';
 import AppliedJobs from './components/appliedJobs/appliedJobs';
-import App from './App';
+import { applyJobsData } from './Loader/getJobdata';
 
 
 // router section -------------------
@@ -23,30 +23,29 @@ const router = createBrowserRouter([
   {
     path: '/',
     element:<Layout></Layout>,
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [  
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch('lists.json'),    
+        loader: ()=> fetch('/lists.json'),    
       },
       {
         path:'statistics' ,
         element: <Statistics></Statistics>
       },
       {
-        path:'appliedJobs' ,
+        path:'/appliedJobs' ,
         element: <AppliedJobs></AppliedJobs>,
-        loader:()=> fetch('jobs.json')
+        // loader: applyJobsData,
       },
       {
         path: 'blog',
         element: <Blog></Blog>
       },
       {
-        path: 'details',
+        path: 'details/:blogid',
         element: <Details></Details>,
-        loader:()=> fetch('jobs.json')
       },
     ]
   },
@@ -58,7 +57,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className='max-w-[1440px] h-screen mx-auto'>
-    <RouterProvider router={router} />
+    <RouterProvider  router={router} />
     </div>
   </React.StrictMode>,
 )

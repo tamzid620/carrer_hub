@@ -1,10 +1,9 @@
-
 import React from 'react';
 import Image from '/Group 9969.png'
 
 const Footer = () => {
     return (
-        <div className='my-96'>
+        <div className=''>
           
           <footer className="footer p-10 bg-black text-white">
   <div>

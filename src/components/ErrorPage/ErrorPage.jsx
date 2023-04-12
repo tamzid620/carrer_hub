@@ -1,22 +1,10 @@
-// import React from 'react';
-
-// const ErrorPage = () => {
-//     return (
-//         <div className='mt-10'>
-//             <h1>404 Error: Page not found</h1>
-//             <p>Sorry, the page you are looking for does not exist.</p>
-//         </div>
-//     );
-// };
-
-// export default ErrorPage;
 import React from 'react'
 import { Link, useRouteError } from 'react-router-dom'
 
 const ErrorPage = () => {
   const { error, status } = useRouteError()
   return (
-    <section className='flex items-center h-screen p-16 bg-pink-100 text-gray-900'>
+    <section className='flex items-center h-screen p-16  bg-pink-100 text-white'>
       <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -47,12 +35,12 @@ const ErrorPage = () => {
           <h2 className='mb-8 font-extrabold text-9xl text-pink-300'>
             <span className='sr-only'>Error</span> {status || 404}
           </h2>
-          <p className='text-2xl text-pink-700 font-semibold md:text-3xl mb-8'>
+          <p className='text-2xl font-semibold md:text-3xl mb-8'>
             {error?.message}
           </p>
           <Link
             to='/'
-            className='px-8 py-3 font-semibold rounded-lg bg-pink-500 text-white'
+            className='px-8 py-3 font-semibold rounded bg-pink-500 text-white'
           >
             Back to homepage
           </Link>

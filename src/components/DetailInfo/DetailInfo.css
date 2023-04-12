@@ -1,0 +1,18 @@
+
+
+
+
+.detail {
+    width: 600px;
+    /* height: 500px; */
+    line-height: 55px;
+}
+.description{
+    line-height: 55px;
+}
+
+.btn-apply{
+    width: 350px;
+    height: 50px;
+}
+

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
 import {Outlet} from 'react-router-dom'
-import Jobs from '../Jobs/Jobs';
 import { useLoaderData } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
